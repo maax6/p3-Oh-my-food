@@ -10,7 +10,7 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ 
+  /* 2 */
 }
 
 /* Sections
@@ -391,8 +391,8 @@ header .return:hover i {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   position: relative;
-  -webkit-animation: return 1s;
-          animation: return 1s;
+  -webkit-animation: return .3s;
+          animation: return .3s;
 }
 
 @-webkit-keyframes return {
