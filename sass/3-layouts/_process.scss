@@ -1,0 +1,94 @@
+
+// PARTIE FONCTIONNEMENT /////////////////////////////////////
+
+.process { 
+    @include flex;
+    padding:20px ;
+  
+    align-items: flex-start;
+   
+    div {
+        @include flex;
+        margin: 12px 12px 12px 12px; 
+        width: 95%;
+        
+    }
+
+     p {
+         background: $basic-grey;
+         display:flex;
+         justify-content: flex-start;
+         align-items: center;
+         column-gap: 20px;
+         padding: 28px 40px 28px 0px;
+         position: relative;
+         font-weight: normal;
+         border-radius: 24px;
+         font-weight: 500;
+         box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); 
+            &:hover{
+                cursor: pointer;
+                background-color: #F5EDFF;
+                & i{
+                    color: $color-primary;
+                }
+            }
+         
+
+        span{
+            display: grid;
+            position: relative;
+            place-content: center;
+            right: 12px; 
+            height: 1.5rem;
+            width:1.5rem;
+            background-color: $color-primary;
+            color: #F6F6F6;
+            border-radius:50%;
+            }
+        i {
+            color: #7E7E7E;
+            }
+
+        }
+        
+    }
+
+    @media screen and (min-width:855px) {
+        
+        
+        .process-list{
+            gap: 6vh;
+        }
+       
+        .resto-col{
+            display: flex;
+            gap:1.5em;
+            
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .resto{
+           width:100%; 
+           h2{
+               margin:0;
+           }
+        }
+            .process {
+                padding: 0 20px 0 20px;
+                .process-list{
+                display: flex; 
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin: 12px 12px 12px 12px;
+                width: 100%;
+                flex-wrap: wrap;
+                column-gap: 51px;
+                row-gap: 20px;
+                }
+            
+        }
+
+    }

@@ -1,0 +1,33 @@
+
+.intro{
+    @include flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 330px;
+    background-color: $basic-grey;
+    font-size: larger;
+    h2{
+        @include flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        }
+     span{
+        display:block;
+        text-align: center;
+        font-weight: 200;
+        }
+    :nth-child(3){
+        @include bouton-site;
+        transform: scale(1);
+    transition: transform 400ms;
+        &:hover {
+        transform: scale(1.05);
+        
+        background: linear-gradient(356deg, #ff79da 0%, #9356dc 100%) ;
+        }
+
+}
+}

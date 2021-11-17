@@ -1,0 +1,23 @@
+*{/*box sizing appliqué à tous les éléments*/
+    box-sizing: border-box;
+    font-family:'roboto', monospace,  sans-serif;;
+    list-style-type: none;
+}
+/*tous les titres h1 ont la même font que le logo en shirkland*/
+h1,h3{
+    font-family: 'shrikhand';
+}
+h3{
+    font-size:x-large;
+    font-weight: normal;
+}
+/*pas de décoration sous les lien*/
+a{
+    text-decoration: none; 
+    color: black;
+    
+}
+
+body{
+    min-width: 373px;
+}
