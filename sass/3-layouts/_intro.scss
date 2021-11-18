@@ -7,7 +7,7 @@
     height: 330px;
     background-color: $basic-grey;
     font-size: larger;
-    h2{
+    h1{
         @include flex;
         align-items: center;
         justify-content: center;
