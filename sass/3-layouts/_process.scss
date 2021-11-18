@@ -4,17 +4,13 @@
 .process { 
     @include flex;
     padding:20px ;
-  
     align-items: flex-start;
-   
     div {
         @include flex;
         margin: 12px 12px 12px 12px; 
-        width: 95%; 
-        
+        width: 95%;  
     }
-
-     p {
+     .steps {
          background: $basic-grey;
          display:flex;
          justify-content: flex-start;
@@ -26,7 +22,7 @@
          border-radius: 24px;
          font-weight: 500;
          box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); 
-         min-width: 297px;
+         
             &:hover{
                 cursor: pointer;
                 background-color: #F5EDFF;
@@ -34,15 +30,13 @@
                     color: $color-primary;
                 }
             }
-         
-
         span{
             display: grid;
             position: relative;
             place-content: center;
             right: 12px; 
-            height: 1.5rem;
-            width:1.5rem;
+            min-height: 1.5rem;
+            min-width:1.5rem; 
             background-color: $color-primary;
             color: #F6F6F6;
             border-radius:50%;
@@ -56,47 +50,36 @@
     }
 
     @media screen and (min-width:855px) {
-        
-        
-        .process-list{
-            gap: 6vh;
-        }
-       
         .resto-col{
             display: flex;
             gap:1.5em;
-            
-            display: flex;
             justify-content: center;
-            
         }
-
         .resto{
            width:100%; 
            h2{
                margin:0;
            }
         }
-            .process {
-                padding: 0 20px 0 20px;
-                .process-list{
+        .process {
+            padding: 0 20px 0 20px;
+            .process-list{
                 display: flex; 
                 flex-direction: row;
                 justify-content: space-evenly;
                 margin: 12px 12px 12px 12px;
-                width: 100%;
-                flex-wrap:wrap;
                 column-gap: 51px;
                 row-gap: 20px;
+                .steps{
+                    width: 29%;
                 }
-            
+            }
         }
-
     }
-    @media screen and (min-width:1033px) {
+    @media screen and (max-width:1032px) {
         .process-list{
             justify-content: center;
-            flex-wrap: nowrap;
+            
             gap: 50px;
         }
     }

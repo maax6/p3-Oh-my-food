@@ -542,7 +542,7 @@ header .return:hover i {
   width: 95%;
 }
 
-.process p {
+.process .steps {
   background: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,45 +562,40 @@ header .return:hover i {
   font-weight: 500;
   -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  min-width: 297px;
 }
 
-.process p:hover {
+.process .steps:hover {
   cursor: pointer;
   background-color: #F5EDFF;
 }
 
-.process p:hover i {
+.process .steps:hover i {
   color: #9356DC;
 }
 
-.process p span {
+.process .steps span {
   display: -ms-grid;
   display: grid;
   position: relative;
   place-content: center;
   right: 12px;
-  height: 1.5rem;
-  width: 1.5rem;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
   background-color: #9356DC;
   color: #F6F6F6;
   border-radius: 50%;
 }
 
-.process p i {
+.process .steps i {
   color: #7E7E7E;
 }
 
 @media screen and (min-width: 855px) {
-  .process-list {
-    gap: 6vh;
-  }
   .resto-col {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 1.5em;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -626,22 +621,20 @@ header .return:hover i {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     margin: 12px 12px 12px 12px;
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-column-gap: 51px;
             column-gap: 51px;
     row-gap: 20px;
   }
+  .process .process-list .steps {
+    width: 29%;
+  }
 }
 
-@media screen and (min-width: 1033px) {
+@media screen and (max-width: 1032px) {
   .process-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     gap: 50px;
   }
 }
@@ -760,7 +753,7 @@ header .return:hover i {
   margin: 0 auto .45em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 855px) {
   .main-wrapper {
     width: 100%;
   }
