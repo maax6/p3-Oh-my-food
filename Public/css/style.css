@@ -803,21 +803,23 @@ header .return:hover i {
   padding: 20px;
 }
 
-.menu h2 {
+.menu .main-wrapper {
+  margin: auto;
+}
+
+.menu .main-wrapper h2 {
   font-family: 'shrikhand';
 }
 
-.menu h2 span {
+.menu .main-wrapper h2 span {
   float: right;
 }
 
-.menu .menu-type {
+.menu .main-wrapper .menu-type {
   font-weight: 300;
 }
 
-.menu .item-card {
-  background-color: #FFFFFF;
-  border-radius: 14px;
+.menu .main-wrapper .item-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,18 +829,24 @@ header .return:hover i {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 12px;
+  background-color: #FFFFFF;
+  padding: 12px 20px 12px 12px;
+  border-radius: 14px;
   -webkit-box-shadow: 2px 10px 47px 19px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 10px 47px 19px rgba(0, 0, 0, 0.1);
+  max-width: 390px;
+}
+
+.menu .main-wrapper .item-card .item-txt {
   text-overflow: ellipsis;
 }
 
-.menu .item-card .item-txt .item-title {
+.menu .main-wrapper .item-card .item-txt .item-title {
   margin: 0;
   font-size: 1.3em;
 }
 
-.menu .item-card .item-txt .item-desc {
+.menu .main-wrapper .item-card .item-txt .item-desc {
   margin: 5px 0 0 0;
   font-weight: 300;
 }
