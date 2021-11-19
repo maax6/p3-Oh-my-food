@@ -815,11 +815,20 @@ header .return:hover i {
   float: right;
 }
 
-.menu .main-wrapper .menu-type {
+.menu .main-wrapper .menu-wrapper .menu-type {
   font-weight: 300;
+  margin-bottom: 7px;
 }
 
-.menu .main-wrapper .item-card {
+.menu .main-wrapper .menu-wrapper .type-underline {
+  border: none;
+  width: 48px;
+  margin: 0 auto 14px 0;
+  height: 3px;
+  background-color: #99E2D0;
+}
+
+.menu .main-wrapper .menu-wrapper .item-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -837,16 +846,16 @@ header .return:hover i {
   max-width: 390px;
 }
 
-.menu .main-wrapper .item-card .item-txt {
+.menu .main-wrapper .menu-wrapper .item-card .item-txt {
   text-overflow: ellipsis;
 }
 
-.menu .main-wrapper .item-card .item-txt .item-title {
+.menu .main-wrapper .menu-wrapper .item-card .item-txt .item-title {
   margin: 0;
   font-size: 1.3em;
 }
 
-.menu .main-wrapper .item-card .item-txt .item-desc {
+.menu .main-wrapper .menu-wrapper .item-card .item-txt .item-desc {
   margin: 5px 0 0 0;
   font-weight: 300;
 }
