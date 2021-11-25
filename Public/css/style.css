@@ -813,32 +813,19 @@ header .return:hover i {
 
 .heart__anim--empty {
   background-color: transparent;
-  z-index: 1;
-}
-
-.heart:hover .heart__anim--empty {
-  opacity: 0;
-  overflow: hidden;
-  color: red;
 }
 
 .heart__anim--mask {
   position: absolute;
-  top: 50%;
   opacity: 0;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  -webkit-transform: translateY(50%) 0.4s ease-in-out;
-          transform: translateY(50%) 0.4s ease-in-out;
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 
 .heart:hover .heart__anim--mask {
-  z-index: 99;
   opacity: 1;
   font-weight: bold;
   color: #9356DC;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .pic-resto {
@@ -862,6 +849,16 @@ header .return:hover i {
 
 .menu .main-wrapper h2 {
   font-family: 'shrikhand';
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu .main-wrapper h2 span {
