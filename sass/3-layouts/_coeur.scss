@@ -8,30 +8,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &:hover .heart__anim--empty{
-            opacity: 0;
-            overflow: hidden;
-            // z-index: 1;
-        }
+    &__anim--empty{
+        background-color: transparent;
+        z-index: 1;
+    }
+            &:hover .heart__anim--empty{
+                    opacity: 0;
+                    overflow: hidden;
+                    color: red;
+                    
+                
+    }
     &__anim--mask {
         position: absolute;
         top: 50%;
         opacity: 0;
         transition: all .4s;
-        // animation: transform;
         transform:translateY(50%) .4s ease-in-out;
     }
-        &:hover .heart__anim--mask{
-            opacity: 1;
-            transform-origin: bottom;
-            font-weight:bold;
-            color: $color-primary;
-            transform: translateY(-50%);
-            // z-index: 99;
-            
-            // animation-delay: both;
-            // animation-direction: reverse;
-        }
-        
-
+    &:hover .heart__anim--mask{
+        z-index: 99;
+        opacity: 1;
+        font-weight:bold;
+        color: $color-primary;
+        transform: translateY(-50%);
+        // transform-origin: bottom;
+        // animation-delay: both;
+        // animation-direction: reverse;
+    }
 }
+            
+        
