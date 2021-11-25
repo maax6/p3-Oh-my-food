@@ -21,7 +21,7 @@
     border-radius: 50px;
     border:none;
     color: white;
-    background:linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    background:$buttons-color;
 }
 
 @mixin darken-txt{

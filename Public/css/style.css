@@ -789,6 +789,50 @@ header .return:hover i {
   padding: 0 .65em 0 0;
 }
 
+.fa-heart {
+  font-size: 25px;
+}
+
+.heart {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heart:hover .heart__anim--empty {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.heart__anim--mask {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-transform: translateY(50%) 0.4s ease-in-out;
+          transform: translateY(50%) 0.4s ease-in-out;
+}
+
+.heart:hover .heart__anim--mask {
+  opacity: 1;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  font-weight: bold;
+  color: #9356DC;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .pic-resto {
   height: 350px;
   width: 100%;
