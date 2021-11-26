@@ -900,14 +900,14 @@ header .return:hover i {
   overflow: hidden;
 }
 
-.menu .main__wrapper .menu__wrapper .item:hover > .item__check {
+.menu .main__wrapper .menu__wrapper .item:hover > .item__check, .menu .main__wrapper .menu__wrapper .item .item__txt--price {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 2.55);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 2.55);
 }
 
-.menu .main__wrapper .menu__wrapper .item:hover > .item__check .item__check--ico {
+.menu .main__wrapper .menu__wrapper .item:hover > .item__check .item__check--ico, .menu .main__wrapper .menu__wrapper .item .item__txt--price .item__check--ico {
   -webkit-transition: -webkit-transform .6s  ease-out;
   transition: -webkit-transform .6s  ease-out;
   transition: transform .6s  ease-out;
