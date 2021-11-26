@@ -59,8 +59,7 @@
                 &:hover > .item__price{
                     transform: translateX(0px);
                     transition: .5s cubic-bezier(.68,-0.55,.27,2.55);
-                    position: relative;
-                    left: 40px;
+
                 }
                 &__txt{
                     text-overflow: ellipsis;
@@ -78,6 +77,8 @@
                     font-size: 1em;
                     justify-self: flex-end;
                     transform: translateX(75px);
+                    position: relative;
+                    left: 30px;
                 }
                 &__check{
                     display: flex;
