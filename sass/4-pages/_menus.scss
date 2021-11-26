@@ -48,13 +48,19 @@
                 box-shadow: 2px 10px 47px 19px rgba(0,0,0,0.1);
                 border-radius: 14px;
                 overflow: hidden;
-                &:hover > .item__check, .item__txt--price{
+                &:hover > .item__check{
                     transform: translateX(0px);
                     transition: .5s cubic-bezier(.68,-0.55,.27,2.55);
                     .item__check--ico{
                         transition: transform .6s  ease-out;
                         transform: rotate(-360deg);
                     }
+                }
+                &:hover > .item__price{
+                    transform: translateX(0px);
+                    transition: .5s cubic-bezier(.68,-0.55,.27,2.55);
+                    position: relative;
+                    left: 40px;
                 }
                 &__txt{
                     text-overflow: ellipsis;
@@ -71,12 +77,13 @@
                 &__price{
                     font-size: 1em;
                     justify-self: flex-end;
+                    transform: translateX(75px);
                 }
                 &__check{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    flex-basis: 0%;
+                    // flex-basis: 0%;
                     height: 73px; 
                     width: 75px;
                     background-color: $color-tertiary;

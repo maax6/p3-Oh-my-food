@@ -900,20 +900,29 @@ header .return:hover i {
   overflow: hidden;
 }
 
-.menu .main__wrapper .menu__wrapper .item:hover > .item__check, .menu .main__wrapper .menu__wrapper .item .item__txt--price {
+.menu .main__wrapper .menu__wrapper .item:hover > .item__check {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
   -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 2.55);
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 2.55);
 }
 
-.menu .main__wrapper .menu__wrapper .item:hover > .item__check .item__check--ico, .menu .main__wrapper .menu__wrapper .item .item__txt--price .item__check--ico {
+.menu .main__wrapper .menu__wrapper .item:hover > .item__check .item__check--ico {
   -webkit-transition: -webkit-transform .6s  ease-out;
   transition: -webkit-transform .6s  ease-out;
   transition: transform .6s  ease-out;
   transition: transform .6s  ease-out, -webkit-transform .6s  ease-out;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
+}
+
+.menu .main__wrapper .menu__wrapper .item:hover > .item__price {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 2.55);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 2.55);
+  position: relative;
+  left: 40px;
 }
 
 .menu .main__wrapper .menu__wrapper .item__txt {
@@ -933,6 +942,8 @@ header .return:hover i {
 .menu .main__wrapper .menu__wrapper .item__price {
   font-size: 1em;
   justify-self: flex-end;
+  -webkit-transform: translateX(75px);
+          transform: translateX(75px);
 }
 
 .menu .main__wrapper .menu__wrapper .item__check {
@@ -945,8 +956,6 @@ header .return:hover i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-preferred-size: 0%;
-      flex-basis: 0%;
   height: 73px;
   width: 75px;
   background-color: #99E2D0;
