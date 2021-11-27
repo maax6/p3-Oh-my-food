@@ -40,14 +40,16 @@
                 align-items:flex-end;
                 padding:12px 20px 12px 18px ;
                 margin: 20px 14px;
-                // flex-wrap: wrap; 
+                flex-wrap: nowrap; 
                 max-width: 100%; 
-                max-width: 390px; // A LAISSSER OU ENLEVER APRES LA DUPLICATION 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨
+                min-width: 364px;
+                max-height: 100px;
                 background-color: #FFFFFF;
                 cursor: pointer;
                 box-shadow: 2px 10px 47px 19px rgba(0,0,0,0.1);
                 border-radius: 14px;
                 overflow: hidden;
+               text-overflow: ellipsis;
                 &:hover > .item__check{
                     transform: translateX(0px);
                     transition: .5s cubic-bezier(.68,-0.55,.27,2.55);
@@ -59,18 +61,22 @@
                 &:hover > .item__price{
                     transform: translateX(0px);
                     transition: .5s cubic-bezier(.68,-0.55,.27,2.55);
-
                 }
                 &__txt{
+                    flex: 1;
+                    white-space: nowrap;
+                    overflow: hidden;
                     text-overflow: ellipsis;
-                    // flex: 1;
                     &--tittle{
                         margin:0;
-                        font-size: 1.3em;
+                        font-size: 1.1em;
                     }
                     &--desc{
                         margin:5px 0 0 0;
                         font-weight: 300;
+                        font-size: .9em;
+                        // white-space: nowrap;
+
                     }
                 }
                 &__price{
@@ -78,7 +84,7 @@
                     justify-self: flex-end;
                     transform: translateX(75px);
                     position: relative;
-                    left: 30px;
+
                 }
                 &__check{
                     display: flex;
