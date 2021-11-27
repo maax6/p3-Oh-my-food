@@ -865,6 +865,10 @@ header .return:hover i {
   float: right;
 }
 
+.menu .main__wrapper .menu__wrapper {
+  margin: auto;
+}
+
 .menu .main__wrapper .menu__wrapper .menu__type {
   font-weight: 300;
   margin-bottom: 7px;
@@ -893,7 +897,6 @@ header .return:hover i {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   max-width: 100%;
-  min-width: 364px;
   max-height: 100px;
   background-color: #FFFFFF;
   cursor: pointer;
@@ -912,10 +915,10 @@ header .return:hover i {
 }
 
 .menu .main__wrapper .menu__wrapper .item:hover > .item__check .item__check--ico {
-  -webkit-transition: -webkit-transform .6s  ease-out;
-  transition: -webkit-transform .6s  ease-out;
-  transition: transform .6s  ease-out;
-  transition: transform .6s  ease-out, -webkit-transform .6s  ease-out;
+  -webkit-transition: -webkit-transform .4s  ease-out;
+  transition: -webkit-transform .4s  ease-out;
+  transition: transform .4s  ease-out;
+  transition: transform .4s  ease-out, -webkit-transform .4s  ease-out;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
@@ -931,20 +934,17 @@ header .return:hover i {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .menu .main__wrapper .menu__wrapper .item__txt--tittle {
   margin: 0;
-  font-size: 1.1em;
 }
 
 .menu .main__wrapper .menu__wrapper .item__txt--desc {
   margin: 5px 0 0 0;
   font-weight: 300;
-  font-size: .9em;
 }
 
 .menu .main__wrapper .menu__wrapper .item__price {
@@ -982,5 +982,24 @@ header .return:hover i {
   border-radius: 50%;
   padding: 5px;
   font-size: 18px;
+}
+
+@media screen and (min-width: 992px) {
+  .type__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu > .main__wrapper > h2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 100px;
+    font-size: 35px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
