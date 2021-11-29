@@ -362,6 +362,7 @@ body {
 }
 
 .waiting {
+  visibility: hidden;
   margin: 0;
   padding: 0;
   font-family: 'shrikhand',sans-serif;
@@ -369,7 +370,7 @@ body {
   font-weight: bold;
   position: absolute;
   text-align: center;
-  z-index: 999;
+  z-index: 20;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -383,6 +384,7 @@ body {
           align-items: center;
   background-color: #8e44ad;
   color: #9b59b6;
+  opacity: 0;
   -webkit-animation: loader 3s linear;
           animation: loader 3s linear;
 }
@@ -455,7 +457,8 @@ body {
 
 @-webkit-keyframes loader {
   0% {
-    opacity: .9;
+    display: block;
+    visibility: visible;
   }
   20% {
     opacity: .8;
@@ -467,7 +470,7 @@ body {
     opacity: .4;
   }
   80% {
-    opacity: .1;
+    opacity: .2;
   }
   99% {
     opacity: 0;
@@ -476,7 +479,8 @@ body {
 
 @keyframes loader {
   0% {
-    opacity: .9;
+    display: block;
+    visibility: visible;
   }
   20% {
     opacity: .8;
@@ -488,10 +492,28 @@ body {
     opacity: .4;
   }
   80% {
-    opacity: .1;
+    opacity: .2;
   }
   99% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes hide-page {
+  0% {
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+}
+
+@keyframes hide-page {
+  0% {
+    display: none;
+  }
+  100% {
+    display: block;
   }
 }
 
@@ -945,21 +967,37 @@ header .return:hover i {
           justify-content: center;
 }
 
-.heart__anim--empty {
-  background-color: transparent;
-}
-
 .heart__anim--mask {
   position: absolute;
-  opacity: 0;
-  -webkit-transition: all .8s;
-  transition: all .8s;
 }
 
 .heart:hover .heart__anim--mask {
-  opacity: 1;
   font-weight: bold;
   color: #9356DC;
+  -webkit-animation: zoom .4s linear;
+          animation: zoom .4s linear;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .pic-resto {
@@ -1038,6 +1076,8 @@ header .return:hover i {
   margin: 14px 10px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  max-width: 800px;
+  min-width: 200px;
   max-height: 100px;
   background-color: #FFFFFF;
   cursor: pointer;
