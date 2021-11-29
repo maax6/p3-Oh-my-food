@@ -363,25 +363,13 @@ body {
 
 .waiting {
   visibility: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: 'shrikhand',sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  position: absolute;
-  text-align: center;
-  z-index: 20;
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  position: fixed;
+  z-index: 2;
   background-color: #8e44ad;
   color: #9b59b6;
   opacity: 0;
@@ -635,6 +623,8 @@ header .return:hover i {
           justify-content: center;
   text-align: center;
   margin: 0;
+  font-weight: bold;
+  font-size: 28px;
 }
 
 .intro span {
@@ -675,6 +665,7 @@ header .return:hover i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 10px;
   padding: 20px;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -1013,6 +1004,7 @@ header .return:hover i {
   margin-top: -75px;
   position: relative;
   padding: 20px;
+  overflow: hidden;
 }
 
 .menu .main__wrapper h2 {
@@ -1057,7 +1049,7 @@ header .return:hover i {
 .menu .main__wrapper .menu__wrapper .type__underline {
   border: none;
   width: 48px;
-  margin: 0 auto 14px 0;
+  margin: 0 14px 14px 0;
   height: 3px;
   background-color: #99E2D0;
 }
@@ -1076,8 +1068,6 @@ header .return:hover i {
   margin: 14px 10px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  max-width: 800px;
-  min-width: 200px;
   max-height: 100px;
   background-color: #FFFFFF;
   cursor: pointer;
@@ -1154,43 +1144,47 @@ header .return:hover i {
 }
 
 .timing1 {
-  -webkit-animation: fadein 1s ease;
-          animation: fadein 1s ease;
+  -webkit-animation: fadein 1s ease-in-out;
+          animation: fadein 1s ease-in-out;
 }
 
 .timing2 {
-  -webkit-animation: fadein 1.5s ease;
-          animation: fadein 1.5s ease;
+  -webkit-animation: fadein 1.6s ease-in-out;
+          animation: fadein 1.6s ease-in-out;
 }
 
 .timing3 {
-  -webkit-animation: fadein 2s ease;
-          animation: fadein 2s ease;
+  -webkit-animation: fadein 2.5s ease-in-out;
+          animation: fadein 2.5s ease-in-out;
 }
 
 @-webkit-keyframes fadein {
   0% {
+    display: none;
     opacity: 0;
-    top: 100px;
   }
-  50% {
-    opacity: .3;
-    top: 0px;
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes fadein {
   0% {
+    display: none;
     opacity: 0;
-    top: 100px;
   }
-  50% {
-    opacity: .3;
-    top: 0px;
+  100% {
+    opacity: 1;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .menu__wrapper {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
   .type__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1203,7 +1197,14 @@ header .return:hover i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 50px;
     font-size: 35px;
+  }
+  .type_plus_Underline {
+    margin-left: 12px;
+  }
+  .type__underline {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

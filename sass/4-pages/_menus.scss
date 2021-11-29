@@ -10,6 +10,7 @@
     margin-top: -75px;
     position: relative;
     padding: 20px;
+    overflow: hidden;
     .main__wrapper{
         h2{
             font-family: 'shrikhand';
@@ -33,7 +34,7 @@
             .type__underline{
                 border: none;
                 width: 48px;
-                margin:0 auto 14px 0;
+                margin:0 14px 14px 0;
                 height: 3px;
                 background-color:$color-tertiary;
             }
@@ -44,8 +45,9 @@
                 padding:12px 20px 12px 18px ;
                 margin: 14px 10px;
                 flex-wrap: nowrap; 
-                max-width: 800px; 
-                min-width: 200px;
+                // max-width: 800px; 
+                // min-width: 357px;
+                
                 max-height: 100px;
                 background-color: #FFFFFF;
                 cursor: pointer;
@@ -102,37 +104,40 @@
     }
 }
 .timing1{
-    animation: fadein 1s ease;
+    animation: fadein 1s ease-in-out;
 }
 
 .timing2{
-    animation: fadein 1.5s ease;
+    animation: fadein 1.6s ease-in-out;
 
 }
-
-
 .timing3{
-    animation: fadein 2s ease;
+    animation: fadein 2.5s ease-in-out;
     @keyframes fadein {
-        0% {
-            opacity: 0;
-            top: 100px;
-        }
-        50% {
-            opacity: .3;
-            top: 0px;
-        }
+        0% {display:none;opacity: 0;}
+        100% {opacity: 1;}
     }
 }
 
 @media screen and (min-width: 992px){
+    .menu__wrapper{
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 1100px){
     .type__wrapper{ 
         display: flex;
         justify-content: center;
     }
     .menu > .main__wrapper > h2{
         justify-content: center;
-
+        gap: 50px;
         font-size: 35px;
+    }
+    .type_plus_Underline{
+        margin-left: 12px;
+    }
+    .type__underline{
+        width:100%;
     }
 }
