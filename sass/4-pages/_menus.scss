@@ -103,22 +103,70 @@
         }
     }
 }
-.timing1{
+// .timing1{
+//     animation: fadein .8s ease-in-out;
+// }
+
+// .timing2{
+//     animation: fadein 1s ease-in-out;
+
+// }
+// .timing3{
+//     animation: fadein 1.2s ease-in-out;
+//     @keyframes fadein {
+//         // 0% {display:none;opacity: 0;}
+//         // 100% {opacity: 1;}
+//     }
+// }
+
+.up1{
+    animation: fadein .8s ease-in-out;
+    transform: translateY(0px);
+}
+
+.up2{
     animation: fadein 1s ease-in-out;
-}
-
-.timing2{
-    animation: fadein 1.6s ease-in-out;
+    transform: translateY(0px);
 
 }
-.timing3{
-    animation: fadein 2.5s ease-in-out;
+.up3{
+    animation: fadein 1.2s ease-in-out;
     @keyframes fadein {
-        0% {display:none;opacity: 0;}
-        100% {opacity: 1;}
+        0% {transform: translateY(50px);
+            opacity: 0;
+        }
+        50%{ 
+            transform: scale(.8);
+        }
+        20%{
+            background-color:#FFFFFF;
+        }
+        22%{
+            background-color:$color-primary;
+        }
+        66%{
+            transform: skew(10deg);
+            background-color:$color-tertiary;
+        }
+        75%{
+            transform: skew(-10deg);
+        }
+        85%{
+            transform: skew(5deg);
+            background-color:$color-secondary;
+        }
+        95%{
+            transform: skew(-5deg);
+        }
+
+        99%{ 
+            transform: skew(20deg);
+        }
+        100% {transform: translateY(0px);
+            opacity: 1;
+        }
     }
 }
-
 @media screen and (min-width: 992px){
     .menu__wrapper{
         max-width: 100%;

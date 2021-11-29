@@ -657,6 +657,12 @@ header .return:hover i {
           box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (min-width: 626px) {
+  .process {
+    margin: 0 10em;
+  }
+}
+
 .process {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,6 +980,22 @@ header .return:hover i {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  70% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  95% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -984,6 +1006,22 @@ header .return:hover i {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
+  }
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  70% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  95% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   100% {
     -webkit-transform: scale(1);
@@ -1143,37 +1181,111 @@ header .return:hover i {
   transition: transform .4s  ease-out, -webkit-transform .4s  ease-out;
 }
 
-.timing1 {
+.up1 {
+  -webkit-animation: fadein .8s ease-in-out;
+          animation: fadein .8s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.up2 {
   -webkit-animation: fadein 1s ease-in-out;
           animation: fadein 1s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
-.timing2 {
-  -webkit-animation: fadein 1.6s ease-in-out;
-          animation: fadein 1.6s ease-in-out;
-}
-
-.timing3 {
-  -webkit-animation: fadein 2.5s ease-in-out;
-          animation: fadein 2.5s ease-in-out;
+.up3 {
+  -webkit-animation: fadein 1.2s ease-in-out;
+          animation: fadein 1.2s ease-in-out;
 }
 
 @-webkit-keyframes fadein {
   0% {
-    display: none;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  20% {
+    background-color: #FFFFFF;
+  }
+  22% {
+    background-color: #9356DC;
+  }
+  66% {
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
+    background-color: #99E2D0;
+  }
+  75% {
+    -webkit-transform: skew(-10deg);
+            transform: skew(-10deg);
+  }
+  85% {
+    -webkit-transform: skew(5deg);
+            transform: skew(5deg);
+    background-color: #FF79DA;
+  }
+  95% {
+    -webkit-transform: skew(-5deg);
+            transform: skew(-5deg);
+  }
+  99% {
+    -webkit-transform: skew(20deg);
+            transform: skew(20deg);
+  }
   100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
   }
 }
 
 @keyframes fadein {
   0% {
-    display: none;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  20% {
+    background-color: #FFFFFF;
+  }
+  22% {
+    background-color: #9356DC;
+  }
+  66% {
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
+    background-color: #99E2D0;
+  }
+  75% {
+    -webkit-transform: skew(-10deg);
+            transform: skew(-10deg);
+  }
+  85% {
+    -webkit-transform: skew(5deg);
+            transform: skew(5deg);
+    background-color: #FF79DA;
+  }
+  95% {
+    -webkit-transform: skew(-5deg);
+            transform: skew(-5deg);
+  }
+  99% {
+    -webkit-transform: skew(20deg);
+            transform: skew(20deg);
+  }
   100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
   }
 }
