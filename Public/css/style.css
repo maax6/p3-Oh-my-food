@@ -361,6 +361,140 @@ body {
   min-width: 373px;
 }
 
+.waiting {
+  margin: 0;
+  padding: 0;
+  font-family: 'shrikhand',sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8e44ad;
+  color: #9b59b6;
+  -webkit-animation: loader 3s linear;
+          animation: loader 3s linear;
+}
+
+.waiting .loader {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.waiting__pattern {
+  border-radius: 50px;
+  border: 7px solid rgba(255, 255, 255, 0.2);
+}
+
+.waiting__pattern::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  bottom: -7px;
+  right: -7px;
+  border-radius: 50px;
+  border: 7px solid transparent;
+  border-right-color: #FFF;
+  border-left-color: #FFF;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.waiting__pattern::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50px;
+  border: 7px solid transparent;
+  border-right-color: #FFF;
+  border-left-color: #FFF;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+  opacity: 0.5;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: .9;
+  }
+  20% {
+    opacity: .8;
+  }
+  40% {
+    opacity: .6;
+  }
+  60% {
+    opacity: .4;
+  }
+  80% {
+    opacity: .1;
+  }
+  99% {
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: .9;
+  }
+  20% {
+    opacity: .8;
+  }
+  40% {
+    opacity: .6;
+  }
+  60% {
+    opacity: .4;
+  }
+  80% {
+    opacity: .1;
+  }
+  99% {
+    opacity: 0;
+  }
+}
+
 /* taille du header et ombre bottom */
 header {
   height: 65px;
