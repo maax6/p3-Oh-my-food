@@ -1071,9 +1071,9 @@ header .return:hover i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: inherit;
       -ms-flex-align: inherit;
           align-items: inherit;
@@ -1198,8 +1198,17 @@ header .return:hover i {
 }
 
 .up3 {
+  -webkit-animation: fadein .8s .75s ease-in-out;
+          animation: fadein .8s .75s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.up4 {
   -webkit-animation: fadein .8s 1s ease-in-out;
           animation: fadein .8s 1s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 @-webkit-keyframes fadein {
@@ -1295,12 +1304,6 @@ header .return:hover i {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .menu__wrapper {
-    max-width: 100%;
   }
 }
 

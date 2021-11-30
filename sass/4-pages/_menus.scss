@@ -25,7 +25,7 @@
         .menu__wrapper{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: inherit;
             .menu__type{
                 font-weight: 300; 
@@ -129,10 +129,14 @@
 .up2{
     animation: fadein .8s .5s ease-in-out;
     transform: translateY(0px);
-
 }
 .up3{
+    animation: fadein .8s .75s ease-in-out;
+    transform: translateY(0px);
+}
+.up4{
     animation: fadein .8s 1s ease-in-out;
+    transform: translateY(0px);
     @keyframes fadein {
         0% {transform: translateY(50px);
             opacity: 0;
@@ -172,15 +176,17 @@
         }
     }
 }
-@media screen and (min-width: 992px){
-    .menu__wrapper{
-        max-width: 100%;
-    }
-}
+// @media screen and (min-width: 992px){
+//     .menu__wrapper{
+//         max-width: 100%;
+
+//     }
+// }
 @media screen and (min-width: 1100px){
     .type__wrapper{ 
         display: flex;
         justify-content: center;
+
     }
     .menu > .main__wrapper > h2{
         justify-content: center;
