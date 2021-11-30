@@ -1166,6 +1166,7 @@ header .return:hover i {
   color: #FFF;
   font-weight: bold;
   font-size: 1.5em;
+  visibility: hidden;
 }
 
 .menu .main__wrapper .menu__wrapper .item:hover > .item__check {
@@ -1173,6 +1174,7 @@ header .return:hover i {
 }
 
 .menu .main__wrapper .menu__wrapper .item:hover > .item__check .item__check--ico {
+  visibility: visible;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
   -webkit-transition: -webkit-transform .4s  ease-out;
@@ -1182,22 +1184,22 @@ header .return:hover i {
 }
 
 .up1 {
-  -webkit-animation: fadein .8s ease-in-out;
-          animation: fadein .8s ease-in-out;
+  -webkit-animation: fadein .8s .25s   ease-in-out;
+          animation: fadein .8s .25s   ease-in-out;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
 .up2 {
-  -webkit-animation: fadein 1s ease-in-out;
-          animation: fadein 1s ease-in-out;
+  -webkit-animation: fadein .8s .5s ease-in-out;
+          animation: fadein .8s .5s ease-in-out;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
 .up3 {
-  -webkit-animation: fadein 1.2s ease-in-out;
-          animation: fadein 1.2s ease-in-out;
+  -webkit-animation: fadein .8s 1s ease-in-out;
+          animation: fadein .8s 1s ease-in-out;
 }
 
 @-webkit-keyframes fadein {
@@ -1230,13 +1232,16 @@ header .return:hover i {
             transform: skew(5deg);
     background-color: #FF79DA;
   }
+  86% {
+    background-color: #FFFFFF;
+  }
   95% {
     -webkit-transform: skew(-5deg);
             transform: skew(-5deg);
   }
   99% {
-    -webkit-transform: skew(20deg);
-            transform: skew(20deg);
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -1275,13 +1280,16 @@ header .return:hover i {
             transform: skew(5deg);
     background-color: #FF79DA;
   }
+  86% {
+    background-color: #FFFFFF;
+  }
   95% {
     -webkit-transform: skew(-5deg);
             transform: skew(-5deg);
   }
   99% {
-    -webkit-transform: skew(20deg);
-            transform: skew(20deg);
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
   }
   100% {
     -webkit-transform: translateY(0px);
