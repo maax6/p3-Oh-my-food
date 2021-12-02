@@ -231,6 +231,26 @@
             opacity: 1;
         }
     }
+// Animation Menu. Scale ZOOM $$  Délice des sens
+
+.zoomin1{
+    animation: zoomin .8s .25s   ease-in-out;
+    transform: scale(1);
+}
+
+.zoomin2{
+    animation: zoomin .8s .5s ease-in-out;
+    transform: scale(1);
+}
+.zoomin3{
+    animation: zoomin .8s .75s ease-in-out;
+    transform: scale(1);
+}
+    @keyframes zoomin {
+        0% {
+            transform: scale(0);
+        }
+    }
 
 
 
