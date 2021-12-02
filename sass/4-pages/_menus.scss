@@ -86,7 +86,7 @@
                     margin: -12px -20px -12px 10px;
                     flex-basis: 75px;
                     max-width:0px;
-                    transition-duration:all 1s ;
+                    transition-duration: 1s ;
                     transition-timing-function: cubic-bezier(0, 0, 0.76, 1.68);
                     transition: max-width .4s;
                     &--ico{
@@ -289,11 +289,7 @@
         width:100%;
     }
 }
-@media screen and (min-width: 855px){
-    h2 {
-        padding: 0 0;
-    }
-    }
+
 // @media screen and (min-width: 900px){
 //     .item{
 //         max-width: 340px;

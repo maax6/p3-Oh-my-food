@@ -14,16 +14,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet"> 
         
-        <!--Feuilles de style perso-->
+        <!--style perso-->
         <link type="text/css" rel="stylesheet" href="Public/css/style.css">
-        
     </head>
     
         <!--Loader-->
-        <section class="waiting"> 
-            <span class="loader waiting__pattern"></span>
-        </section>
-    <body>
+       <body>
+            <div class="waiting"> 
+                <span class="loader waiting__pattern"></span>
+            </div>
+    
         <header>
                 <img src="images/logo/ohmyfood@2x2.svg" alt="logo-ohmyfood">
         </header>
@@ -54,7 +54,7 @@
                 </section>
                 <section class="resto" id="explore">
                     <div class="restoSect">
-                    <h2>Restaurants</h2>
+                    <h2 id="tittleResto">Restaurants</h2>
                     <div class="resto-wrapper">
                         <div class="resto-col">
                             <a class="resto-card" href="PaletteDuGout.html"> 
@@ -67,10 +67,10 @@
                                         <h4 class="resto-name"><strong>La palette du goût</strong></h4>
                                         <span class="resto-loc">Ménilmontant</span>
                                     </div>
-                                    <label class="heart">
+                                    <div class="heart">
                                         <i class="far fa-heart heart__anim--empty"></i>
                                         <i class="far fa-heart heart__anim--mask"></i>
-                                    </label>
+                                    </div>
                                 </footer>
                             </a>
                             <a class="resto-card" href="NoteEnchantee.html">
@@ -83,10 +83,10 @@
                                         <h4 class="resto-name"><strong>La note enchantée</strong></h4>
                                         <span class="resto-loc">Charonne</span>
                                     </div>
-                                    <label class="heart">
+                                    <div class="heart">
                                         <i class="far fa-heart heart__anim--empty"></i>
                                         <i class="far fa-heart heart__anim--mask"></i>
-                                    </label> 
+                                    </div> 
                                 </footer>
                             </a>
                         </div>
@@ -100,10 +100,10 @@
                                         <h4 class="resto-name"><strong>À la française</strong></h4>
                                         <span class="resto-loc">Cité rouge</span>
                                     </div>
-                                    <label class="heart">
+                                    <div class="heart">
                                         <i class="far fa-heart heart__anim--empty"></i>
                                         <i class="far fa-heart heart__anim--mask"></i>
-                                    </label>
+                                    </div>
                                 </footer>
                             </a>
                             <a class="resto-card" href="DeliceDesSens.html">
@@ -115,10 +115,10 @@
                                         <h4 class="resto-name"><strong>Le délice des sens</strong></h4>
                                         <span class="resto-loc">Folie-Méricourt</span>
                                     </div>
-                                    <label class="heart">
+                                    <div class="heart">
                                         <i class="far fa-heart heart__anim--empty"></i>
                                         <i class="far fa-heart heart__anim--mask"></i>
-                                    </label> 
+                                    </div> 
                                 </footer >
                             </a>
                         </div>
