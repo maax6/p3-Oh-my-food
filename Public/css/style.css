@@ -719,9 +719,74 @@ header .return:hover i {
 
 .process .steps:hover i {
   color: #9356DC;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-.process .steps span {
+.process .steps:hover .jump {
+  -webkit-animation: jump .5s infinite;
+          animation: jump .5s infinite;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  15% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  25% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  40% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  60% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  80% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  15% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  25% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  40% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  60% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  80% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+.process .steps .jump {
   display: -ms-grid;
   display: grid;
   position: relative;
@@ -732,10 +797,17 @@ header .return:hover i {
   background-color: #9356DC;
   color: #F6F6F6;
   border-radius: 50%;
+  -webkit-animation: jump .5s linear;
+          animation: jump .5s linear;
 }
 
 .process .steps i {
   color: #7E7E7E;
+}
+
+.processhover .jump {
+  -webkit-transform: translateY;
+          transform: translateY;
 }
 
 @media screen and (min-width: 855px) {
