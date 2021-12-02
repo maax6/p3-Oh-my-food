@@ -588,6 +588,10 @@ header .return:hover i {
   margin-bottom: 6px;
 }
 
+.link-menu {
+  margin-left: -45px;
+}
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
