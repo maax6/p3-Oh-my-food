@@ -1464,6 +1464,9 @@ header .return:hover i {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .menu > .main-wrapper {
+    margin: 0 200px;
+  }
   .menu > .main__wrapper > h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
