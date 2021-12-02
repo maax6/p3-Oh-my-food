@@ -1063,8 +1063,9 @@ header .return:hover i {
   -webkit-animation: zoom .4s linear;
           animation: zoom .4s linear;
   background: linear-gradient(346deg, #99e2d0 0%, #ff79da 20%, #9356dc 97%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 @-webkit-keyframes zoom {
