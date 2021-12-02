@@ -973,8 +973,9 @@ header .return:hover i {
 }
 
 @media screen and (min-width: 855px) {
-  .main-wrapper {
-    width: 100%;
+  .process-list {
+    margin-left: auto;
+    margin-right: auto;
   }
   .resto-wrapper {
     display: -webkit-box;
@@ -985,12 +986,18 @@ header .return:hover i {
         -ms-flex-direction: column;
             flex-direction: column;
     flex-direction: row;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   .resto .resto-wrapper .resto-col {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  h2 {
+    padding: 0 0 50px;
   }
 }
 
@@ -1559,6 +1566,17 @@ header .return:hover i {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
