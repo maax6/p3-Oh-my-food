@@ -19,6 +19,8 @@
             justify-content:space-between;
             align-items: center;
             letter-spacing: 2px;
+            transition-duration: .5s;
+            transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
             span{
                 float: right;
             }
@@ -46,10 +48,8 @@
                 padding:12px 20px 12px 18px ;
                 margin: 14px 10px;
                 flex-wrap: nowrap; 
-                // max-width: 800px; 
-                // min-width: 357px;
-                
                 max-height: 100px;
+
                 background-color: #FFFFFF;
                 cursor: pointer;
                 box-shadow: 2px 10px 47px 19px rgba(0,0,0,0.1);
@@ -86,6 +86,8 @@
                     margin: -12px -20px -12px 10px;
                     flex-basis: 75px;
                     max-width:0px;
+                    transition-duration:all 1s ;
+                    transition-timing-function: cubic-bezier(0, 0, 0.76, 1.68);
                     transition: max-width .4s;
                     &--ico{
                         color:#FFF;
@@ -261,13 +263,12 @@
 // --MediaQueries 📺 📺 📺 
 
 
-@media screen and (min-width: 992px){
-    .menu{
-
-        display: flex;
-        justify-content: center;
-    }
-}
+// @media screen and (min-width: 992px){
+//     .menu{
+//         display: flex;
+//         justify-content: center;
+//     }
+// }
 
 @media screen and (min-width: 1100px){
     .type__wrapper{ 
@@ -275,9 +276,7 @@
         justify-content: center;
 
     }
-    .menu > .main-wrapper{
-        margin:0 200px;
-    }
+
     .menu > .main__wrapper > h2{
         justify-content: center;
         gap: 50px;
@@ -290,3 +289,14 @@
         width:100%;
     }
 }
+@media screen and (min-width: 855px){
+    h2 {
+        padding: 0 0;
+    }
+    }
+// @media screen and (min-width: 900px){
+//     .item{
+//         max-width: 340px;
+//         min-width: 340px;
+//     }
+// }
