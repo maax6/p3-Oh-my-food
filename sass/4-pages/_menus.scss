@@ -18,6 +18,7 @@
             display: flex;
             justify-content:space-between;
             align-items: center;
+            letter-spacing: 2px;
             span{
                 float: right;
             }
@@ -105,39 +106,26 @@
         }
     }
 }
-// .timing1{
-//     animation: fadein .8s ease-in-out;
-// }
 
-// .timing2{
-//     animation: fadein 1s ease-in-out;
+//Animation menu fun 🤡  La Palette Du Goût
 
-// }
-// .timing3{
-//     animation: fadein 1.2s ease-in-out;
-//     @keyframes fadein {
-//         // 0% {display:none;opacity: 0;}
-//         // 100% {opacity: 1;}
-//     }
-// }
-
-.up1{
-    animation: fadein .8s .25s   ease-in-out;
+.fadeInFun1{
+    animation: fadeinFun .8s .25s   ease-in-out;
     transform: translateY(0px);
 }
 
-.up2{
-    animation: fadein .8s .5s ease-in-out;
+.fadeInFun2{
+    animation: fadeinFun .8s .5s ease-in-out;
     transform: translateY(0px);
 }
-.up3{
-    animation: fadein .8s .75s ease-in-out;
+.fadeInFun3{
+    animation: fadeinFun .8s .75s ease-in-out;
     transform: translateY(0px);
 }
-.up4{
-    animation: fadein .8s 1s ease-in-out;
+.fadeInFun4{
+    animation: fadeinFun .8s 1s ease-in-out;
     transform: translateY(0px);
-    @keyframes fadein {
+    @keyframes fadeinFun {
         0% {transform: translateY(50px);
             opacity: 0;
         }
@@ -176,17 +164,97 @@
         }
     }
 }
+
+// Animation Menu. simple 💤 La Note Enchantée
+.fadeInScale1{
+    animation: fadeInScale .8s .25s ease-in-out;
+}
+.fadeInScale2{
+    animation: fadeInScale .8s .5s ease-in-out;
+}
+.fadeInScale3{
+    animation: fadeInScale .8s .75s ease-in-out;
+}
+.fadeInScale4{
+    animation: fadeInScale .8s 1s ease-in-out;
+}
+@keyframes fadeInScale {
+    0% {transform: translateY(200px);
+    }
+    50%{ 
+        transform: scale(.8); 
+    }
+    100% {transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+// Animation Menu. Scale only  🔆  A la Française
+
+.fadeinSalmon1{
+    animation: fadeinSalmon .8s .25s   ease-in-out;
+    transform: translateY(0px);
+}
+
+.fadeinSalmon2{
+    animation: fadeinSalmon .8s .5s ease-in-out;
+    transform: translateY(0px);
+}
+.fadeinSalmon3{
+    animation: fadeinSalmon .8s .75s ease-in-out;
+    transform: translateY(0px);
+}
+    @keyframes fadeinSalmon {
+        0% {transform: translateY(50px);
+            opacity: 0;
+        }
+        50%{ 
+            transform: scale(.8);
+        }
+        75%{
+            transform: skew(-10deg);
+        }
+        85%{
+            transform: skew(5deg);
+            background-color:rgba(170, 93, 30, 0.123);
+        }
+        86%{
+            background-color: #FFFFFF;
+        }
+        95%{
+            transform: skew(-5deg);
+        }
+        99%{ 
+            transform: skew(0deg);
+        }
+        100% {transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+
+
+// --MediaQueries 📺 📺 📺 
+
+
 // @media screen and (min-width: 992px){
 //     .menu__wrapper{
-//         max-width: 100%;
-
+//        max-width: 100%;
 //     }
 // }
+
 @media screen and (min-width: 1100px){
     .type__wrapper{ 
         display: flex;
         justify-content: center;
 
+    }
+    .menu > .main-wrapper{
+        margin:0 200px;
     }
     .menu > .main__wrapper > h2{
         justify-content: center;
