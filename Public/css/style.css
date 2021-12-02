@@ -729,8 +729,8 @@ header .return:hover i {
 }
 
 .process .steps:hover .jump {
-  -webkit-animation: jump .6s infinite;
-          animation: jump .6s infinite;
+  -webkit-animation: jump .5s infinite;
+          animation: jump .5s infinite;
 }
 
 @-webkit-keyframes jump {
@@ -798,8 +798,6 @@ header .return:hover i {
   background-color: #9356DC;
   color: #F6F6F6;
   border-radius: 50%;
-  -webkit-animation: jump cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-          animation: jump cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 
 .process .steps i {
