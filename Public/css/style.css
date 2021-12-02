@@ -725,8 +725,8 @@ header .return:hover i {
 }
 
 .process .steps:hover .jump {
-  -webkit-animation: jump 1s infinite;
-          animation: jump 1s infinite;
+  -webkit-animation: jump .6s infinite;
+          animation: jump .6s infinite;
 }
 
 @-webkit-keyframes jump {
@@ -739,8 +739,8 @@ header .return:hover i {
             transform: translateY(-40%);
   }
   25% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
   }
   40% {
     -webkit-transform: translateY(5%);
@@ -766,8 +766,8 @@ header .return:hover i {
             transform: translateY(-40%);
   }
   25% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
   }
   40% {
     -webkit-transform: translateY(5%);
