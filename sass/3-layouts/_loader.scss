@@ -7,7 +7,7 @@
     place-content: center;
     position: fixed;
     z-index:2; 
-    background-color: #8e44ad;
+    background: linear-gradient(346deg, rgba(255,121,218,1) 22%, rgba(90,43,94,1) 43%);
     color: #9b59b6;
     opacity:0;
     animation: loader 3s linear;
@@ -47,7 +47,7 @@
         border-right-color: #FFF;
         border-left-color: #FFF;
         animation: spin 1.5s linear infinite;
-        opacity: 0.5;
+        opacity: 0.8;
         
     }
     @keyframes spin {
@@ -59,10 +59,10 @@
  @keyframes loader {
      
         0%{ display:block ; visibility: visible;}
-        20%{ opacity: .8;}
-        40%{ opacity: .6;}
-        60%{ opacity: .4;}
-        80%{ opacity: .2;}
+        20%{ opacity: 1;}
+        40%{ opacity: 1;}
+        60%{ opacity: 1;}
+        80%{ opacity: .8;}
         99%{ opacity: 0 ;}
     }
  @keyframes hide-page {

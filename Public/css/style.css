@@ -374,7 +374,7 @@ body {
   place-content: center;
   position: fixed;
   z-index: 2;
-  background-color: #8e44ad;
+  background: linear-gradient(346deg, #ff79da 22%, #5a2b5e 43%);
   color: #9b59b6;
   opacity: 0;
   -webkit-animation: loader 3s linear;
@@ -422,7 +422,7 @@ body {
   border-left-color: #FFF;
   -webkit-animation: spin 1.5s linear infinite;
           animation: spin 1.5s linear infinite;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 @-webkit-keyframes spin {
@@ -453,16 +453,16 @@ body {
     visibility: visible;
   }
   20% {
-    opacity: .8;
+    opacity: 1;
   }
   40% {
-    opacity: .6;
+    opacity: 1;
   }
   60% {
-    opacity: .4;
+    opacity: 1;
   }
   80% {
-    opacity: .2;
+    opacity: .8;
   }
   99% {
     opacity: 0;
@@ -475,16 +475,16 @@ body {
     visibility: visible;
   }
   20% {
-    opacity: .8;
+    opacity: 1;
   }
   40% {
-    opacity: .6;
+    opacity: 1;
   }
   60% {
-    opacity: .4;
+    opacity: 1;
   }
   80% {
-    opacity: .2;
+    opacity: .8;
   }
   99% {
     opacity: 0;
