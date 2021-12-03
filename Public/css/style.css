@@ -1616,4 +1616,11 @@ header .return:hover i {
     width: 100%;
   }
 }
+
+@media screen and (min-width: 1100px) {
+  .item {
+    max-width: 340px;
+    min-width: 340px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
