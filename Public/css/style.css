@@ -348,6 +348,10 @@ template {
           box-sizing: border-box;
   font-family: 'roboto', monospace,  sans-serif;
   list-style-type: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /*tous les titres h1 ont la même font que le logo en shirkland*/
