@@ -254,7 +254,16 @@
         }
     }
 
+/*placement bouton */
 
+.button__wrapper{
+    display: grid;
+    place-content: center;
+    padding: 25px 0 0 0;
+    .button{
+        padding: 15px 45px ;
+    } 
+}
 
 
 
