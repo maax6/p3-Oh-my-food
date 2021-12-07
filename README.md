@@ -14,7 +14,7 @@ Nous nous positionnons sur un marché de niche, avec les restaurants luxueux des
 Classes moyennes et supérieures, connectées et souvent pressées, souhaitant déguster des produits de qualité.
 Identité graphique
 *Polices*
-*Logo et titres*: Shrikhand Texte: Roboto
+*Logo et titres*: Shrikhand *Texte:*q Roboto
 *Couleurs*
 Primaire #9356DC
 Secondaire #FF79DA

@@ -570,7 +570,7 @@ header .return:hover i {
   }
 }
 
-.loc-banner {
+.loc_banner {
   margin: 5px 0 0 0;
   height: 53px;
   display: -webkit-box;
@@ -587,7 +587,7 @@ header .return:hover i {
   background-color: #EAEAEA;
 }
 
-.loc-banner i {
+.loc_banner i {
   margin-right: 10px;
   margin-bottom: 6px;
 }
@@ -1024,7 +1024,6 @@ header .return:hover i {
   background-color: #353535;
   color: white;
   line-height: 1.5em;
-  margin-top: 200px;
 }
 
 .footer h3 {
@@ -1040,6 +1039,10 @@ header .return:hover i {
 
 .footer li:nth-child(2) i {
   padding: 0 .65em 0 0;
+}
+
+.footer_contact a {
+  color: #FFFFFF;
 }
 
 .fa-heart {
