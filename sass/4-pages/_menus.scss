@@ -131,14 +131,14 @@
         0% {transform: translateY(50px);
             opacity: 0;
         }
-        50%{ 
-            transform: scale(.8);
-        }
         20%{
             background-color:#FFFFFF;
         }
         22%{
             background-color:$color-primary;
+        }
+        50%{ 
+            transform: scale(.8);
         }
         66%{
             transform: skew(10deg);

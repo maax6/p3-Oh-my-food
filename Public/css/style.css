@@ -1071,12 +1071,12 @@ header .return:hover i {
 .heart:hover .heart__anim--mask {
   font-weight: bold;
   color: #9356DC;
-  -webkit-animation: zoom .4s linear;
-          animation: zoom .4s linear;
   background: linear-gradient(346deg, #99e2d0 0%, #ff79da 20%, #9356dc 97%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-animation: zoom .4s linear;
+          animation: zoom .4s linear;
 }
 
 @-webkit-keyframes zoom {
@@ -1330,15 +1330,15 @@ header .return:hover i {
             transform: translateY(50px);
     opacity: 0;
   }
-  50% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
   20% {
     background-color: #FFFFFF;
   }
   22% {
     background-color: #9356DC;
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   66% {
     -webkit-transform: skew(10deg);
@@ -1378,15 +1378,15 @@ header .return:hover i {
             transform: translateY(50px);
     opacity: 0;
   }
-  50% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
   20% {
     background-color: #FFFFFF;
   }
   22% {
     background-color: #9356DC;
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   66% {
     -webkit-transform: skew(10deg);

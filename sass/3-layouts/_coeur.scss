@@ -14,11 +14,11 @@
     &:hover .heart__anim--mask{
         font-weight:bold;
         color: $color-primary;
-        animation: zoom .4s linear;
         background: linear-gradient(346deg, rgba(153,226,208,1) 0%, rgba(255,121,218,1) 20%, rgba(147,86,220,1) 97%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        animation: zoom .4s linear;
     }
     @keyframes zoom{
         0%{transform:scale(0) }
